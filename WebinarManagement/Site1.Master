@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebinarManagement.Site1" %>
+
+<!DOCTYPE html>
+
+<head runat="server">
+    <title>Kshatriya Educare</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="auther" content="SHINDE">
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js" integrity="sha512-ux1VHIyaPxawuad8d1wr1i9l4mTwukRq5B3s8G3nEmdENnKF5wKfOV6MEUH0k/rNT4mFr/yL+ozoDiwhUQekTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <div class="container">
+                    <div id="branding">
+                        <h1 style="margin-bottom:10px;"><span class="heighlight">Kshatriya</span> web design</h1>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li class="current"><a href="WebForm1.aspx">Home</a></li>
+                            <li><a href="Student_List.aspx">Students</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Log in</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer id="main-footer">
+                <p>OP Web Design &copy; 2021</p>
+            </footer>
+        </div>
+    </form>
+</body>
+
